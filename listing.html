@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                        'gf': { 'min': '280px', 'max': '540px' },
+
+                        'sm': { 'min': '541px', 'max': '767px' },
+                        // => @media (min-width: 640px and max-width: 767px) { ... }
+
+                        'md': { 'min': '768px', 'max': '1023px' },
+                        // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+                        'lg': { 'min': '1024px', 'max': '1535px' },
+                        // => @media (min-width: 1024px and max-width: 1279px) { ... }
+
+                        'xl': { 'min': '1280px', 'max': '1535px' },
+                        // => @media (min-width: 1280px and max-width: 1535px) { ... }
+
+                        '2xl': { 'min': '1536px' },
+                        // => @media (min-width: 1536px) { ... }
+                    },
+                extend: {
+                   
+                }
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container max-w-[1350px] px-24 gf:px-5 sm:px-7 md:px-8">
+        <nav class="nav flex flex-wrap gap-y-3 gf:items-center gf:justify-center justify-between items-center py-7 border-b-2 border-inherit">
+            <div class="nav-logo">
+                <img src="./pics/p-logo.png" alt="">
+            </div>
+            <div class="pages">
+                <ul class="flex flex-wrap  items-center justify-center text-white gap-7">
+                    <img  src="./pics/Airbnb Search-nav.png" alt="">
+                </ul>
+            </div>
+            <div class="flex gap-3 items-center text-base">
+                <p class="black">Become a Host</p>
+                <img src="./pics/globe.png" alt="">
+                <img src="./pics/serach-user.png" alt="">
+            </div>
+        </nav>
+    </div>
+
+    <!-- //////////////// header section  -->
+
+    <section class=" px-24 py-5 gf:px-5 sm:px-7 md:px-8">
+        <h1 class="mb-3 text-medium text-[30px] gf:text-2xl">Bordeaux Getaway</h1>
+        <div class="flex flex-wrap justify-between items-center gap-y-4">
+            <div class="content flex items-center justify-center flex-wrap gap-[15px]">
+                <img src="./pics/star-icon.png" alt="">
+                <p class="rating">5.0</p>
+                <p class="text-sm font-bold border-b-2 border-black">7 <span>reviews</span></p>
+                <img src="./pics/badge-icon.png" alt="">
+                <p class="text-sm text-medium text-[#6B7280]">Superhost</p>
+                <p class="text-sm text-medium text-[#6B7280] border-b-2 border-[#6B7280]">Bordeaux, France</p>
+            </div>
+            <div class="row flex items-center gap-[15px]">
+                <img class="w-full" src="./pics/share-icon.png" alt="">
+                <h2 class="text-black text-sm text-medium">Share</h2>
+                <img class="w-full" src="./pics/heart-icon.png" alt="">
+                <h2 class="text-black text-sm text-medium">Save</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- ////////// banner section  -->
+
+    <section class="banner flex flex-col justify-center items-center px-24 py-5 gf:px-5 sm:px-7 md:px-8">
+        <div class="grid grid-cols-2 gap-y-2 gap-x-2 gf:grid-cols-1">
+            <div class="column">
+                <img class="w-full gf:w-full rounded" src="./pics/s-banner1.png" alt="">
+            </div>
+            <div class="grid grid-cols-2  gap-x-2">
+                <div class="row-img ">
+                    <img class="w-full rounded mb-2" src="./pics/s-banner2.png" alt="">
+                    <img class="w-full rounded" src="./pics/s-banner3.png" alt="">
+                </div>
+                <div class="row-img">
+                    <img class="w-full rounded mb-2" src="./pics/s-banner4.png" alt="">
+                    <img class="w-full rounded" src="./pics/s-banner5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /////////////// mid section  -->
+
+    <section class="mid px-24 py-5 gf:px-5 sm:px-7 md:px-8 ">
+        <div class="flex justify-between gf:flex-col sm:flex-col gap-12">
+            <div class="content">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-[24px] text-medium">Entire rental unit hosted by Ghazal</h3>
+                    <img src="./pics/Avatar Base.png" alt="">
+                </div>
+                <div class="room-detail flex gap-4 border-b-2 p-1 border-[#E5E7EB]">
+
+                    <p class="text-sm text-normal">2 <span>guests</span></p>
+                    <p class="text-sm text-normal">1 <span>bedroom</span></p>
+                    <p class="text-sm text-normal">1 <span>bed</span></p>
+                    <p class="text-sm text-normal">1 <span>bath</span></p>
+
+                </div>
+
+
+                <div class="home-details">
+                    <div class="border-b-2 border[#E5E7EB]">
+                        <div class="home flex items-center gap-3 py-2">
+                            <img src="./pics/home-icon.png" alt="">
+                            <div class="home-content">
+                                <h3 class="text-base text-medium">Entire home</h3>
+                                <p class="text-sm text-normal text-[#6B7280]">You’ll have the apartment to yourself</p>
+                            </div>
+                        </div>
+                        <div class="home flex items-center gap-3 py-2">
+                            <img src="./pics/2-star-icon.png" alt="">
+                            <div class="home-content">
+                                <h3 class="text-base text-medium">Enhanced Clean</h3>
+                                <p class="text-sm text-normal text-[#6B7280]">This Host committed to Airbnb’s 5-step enhanced cleaning process. <span class="text-bold">Show
+                                        more</span> </p>
+                            </div>
+                        </div>
+                        <div class="home flex items-center gap-3 py-2">
+                            <img src="./pics/slash-icon.png" alt="">
+                            <div class="home-content">
+                                <h3 class="text-base text-medium">Self check-in</h3>
+                                <p class="text-sm text-normal text-[#6B7280]">Check yourself in with the keypad.</p>
+                            </div>
+                        </div>
+                        <div class="home flex items-center gap-3 py-2">
+                            <img src="./pics/calendar-icon.png" alt="">
+                            <h3 class="text-base text-medium">Free cancellation before Feb 14</h3>
+                        </div>
+                    </div>
+                    <div class="home para flex flex-col items-center gap-3 py-2 border-b-2 border[#E5E7EB]">
+                        <p class="text-sm text-normal">Come and stay in this superb duplex T2, in the heart of the historic center of Bordeaux.
+                            Spacious and bright, in a real Bordeaux building in exposed stone, you will enjoy all the
+                            charms of the city thanks to its ideal location. Close to many shops, bars and restaurants,
+                            you can access the apartment by tram A and C and bus routes 27 and 44.
+                            ...</p>
+                        <span class="show">Show more</span>
+                    </div>
+                    <div class="sleep border-b-2 border[#E5E7EB] py-2">
+                        <h3 class="text-2xl text-medium pb-2" >Where you’ll sleep</h3 text-[#6B7280]>
+                        <img src="./pics/sleep.png" alt="">
+                        <h4 class="pt-2 text-base text-medium">Bedroom</h4>
+                        <p class="text-sm text-normal">1 queen bed</p>
+                    </div>
+                    <div class="offer border-b-2 border[#E5E7EB] flex flex-wrap justify-between my-4">
+
+                        <div class="column py-3">
+                            <h3 class="text-2xl text-medium">What this place offers</h3>
+                            <div class="icons flex items-center gap-4 p-3">
+                                <img src="./pics/garden-icon.png" alt="">
+                                <p class="text-base font-normal">Garden view</p>
+                            </div>
+                            <div class="icons flex items-center gap-4 p-3">
+                                <img src="./pics/wifi.png" alt="">
+                                <p class="text-base font-normal">Wifi</p>
+                            </div>
+                            <div class="icons flex items-center gap-4 p-3">
+                                <img src="./pics/washer-icon.png" alt="">
+                                <p class="text-base font-normal">Free washer - in building</p>
+                            </div>
+                            <div class="icons flex items-center gap-4 p-3">
+                                <img src="./pics/central.png" alt="">
+                                <p class="text-base font-normal">Central air conditioning</p>
+                            </div>
+                            <div class="icons flex items-center gap-4 p-3">
+                                <img src="./pics/refrig-icon.png" alt="">
+                                <p class="text-base font-normal">Refrigerator</p>
+                            </div>
+                            <button class="btn1 mt-5 px-8 py-4 text-sm text-black-600 font-semibold rounded-lg border border-black hover:text-black  focus:outline-none">Show all 37 amenities</button>
+                        </div>
+                        <div class="column mt-10">
+                            <div class="icons flex items-center gap-4 p-3">
+                                <img src="./pics/kitchen-icon.png" alt="">
+                                <p class="text-base font-normal">Kitchen</p>
+                            </div>
+                            <div class="icons flex items-center gap-4 p-3">
+                                <img src="./pics/pets.png" alt="">
+                                <p class="text-base font-normal">Pets allowed</p>
+                            </div>
+                            <div class="icons flex items-center gap-4 p-3">
+                                <img src="./pics/dryer.png" alt="">
+                                <p class="text-base font-normal">Dryer</p>
+                            </div>
+                            <div class="icons flex items-center gap-4 p-3">
+                                <img src="./pics/security.png" alt="">
+                                <p class="text-base font-normal">Security cameras on property</p>
+                            </div>
+                            <div class="icons flex items-center gap-4 p-3">
+                                <img src="./pics/by-icon.png" alt="">
+                                <p class="text-base font-normal">Bicycles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /////////// box -->
+            <div class="box w-[1180px] sm:w-auto gf:w-auto h-[540px] p-[24px] rounded-mg shadow-md">
+                <div class="review flex items-center justify-between">
+                    <h3 class="text-xl font-[600]">$75 <span class="text-base font-medium">/ night</span></h3>
+                    <div class="review-rating flex items-center gap-2">
+                        <img src="./pics/star-icon.png" alt="">
+                        <p class="text-sm font-semibold">5.0</p>
+                        <p class="text-sm font-bold underline"> 7 reviews</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 border border-[#E5E7EB] rounded-md mt-5 ">
+                    <div class="check-in border-b-2 border-r-2">
+                        <h3 class="pt-1 pl-1 text-[10px] font-semibold">CHECK-IN</h3>
+                        <p class="pt-1 pl-1 text-sm font-normal text-[#6B7280] pb-1">2/19/2022</p>
+                    </div>
+                    <div class="check  border-b-2">
+                        <h3 class="pt-1 pl-1 text-[10px] font-semibold">CHECKOUT</h3>
+                        <p class="pt-1 pl-1 text-sm font-normal text-[#6B7280] pb-1">2/26/2022</p>
+                    </div>
+                    <div class="check-out ">
+                        <h3 class="pt-1 pl-1 text-[10px] font-semibold">GUESTS</h3>
+                        <p class="pt-1 pl-1 text-sm font-normal text-[#6B7280] pb-1">2 guests</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="mt-5 w-[100%] px-8 py-4 text-lg bg-[#DE3151] border-0 text-white font-semibold rounded-lg  focus:outline-none">Reserve</button>
+                </div>
+                <div class="charged">
+                    <h4 class="mt-3 text-sm font-normal text-center">You won’t be charged yet</h4>
+                    <div class="flex justify-between border-b-2 border-[#E5E7EB] pb-3">
+                        <div class="charged-flex">
+                            <h5 class="text-base font-normal py-1">$79 x 7 nights</h5>
+                            <h5 class="text-base font-normal py-1">Weekly discount</h5>
+                            <h5 class="text-base font-normal py-1">Cleaning fee</h5>
+                            <h5 class="text-base font-normal py-1">Service fee</h5>
+                            <h5 class="text-base font-normal py-1">Occupancy taxes and fees</h5>
+                        </div>
+                        <div class="charged-flex-two">
+                            <p class="text-right text-base py-1">$555</p>
+                            <p class="text-[#10B981]">-$28</p>
+                            <p class="text-right text-base py-1">$62</p>
+                            <p class="text-right text-base py-1">$83</p>
+                            <p class="text-right text-base py-1">$29</p>
+                        </div>
+
+                    </div>
+                    <div class="flex justify-between items-center pt-3">
+                        <h5>Total</h5>
+                        <p>$701</p>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <section class="testimonial px-24 py-5 gf:px-5 sm:px-7 md:px-8">
+        <div class="rating flex items-center gap-[10px]">
+            <img class="" src="./pics/fullstar.png" alt="">
+            <p class="text-2xl font-medium py-[2px]">5.0</p>
+            <p class="text-2xl font-medium">7 reviews</p>
+        </div>
+        <div class="grid grid-cols-2 gf:grid-cols-1 sm:grid-cols-1 gap-x-[15px] mt-[30px] border-b-2 border-inherit pb-5">
+            <div class="left-column">
+                <div class="flex gap-[120px] gf:gap-[30px] md:gap-[25px] ">
+                    <div class="clean">
+                        <p class="text-base font-normal py-[6px]">Cleanliness</p>
+                        <p class="text-base font-normal py-[6px]">Communication</p>
+                        <p class="text-base font-normal py-[6px]">Check-in</p>
+                    </div>
+                    <div class="radius">
+                        <div class="bar">
+                            <div class="black"></div>
+                            <div class="rate">
+                                <p class="text-[12px] font-normal py-[2px]">5.0</p>
+
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="black"></div>
+                            <div class="rate">
+                                <p class="text-[12px] font-normal py-[2px]">5.0</p>
+
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="black"></div>
+                            <div class="rate">
+                                <p class="text-[12px] font-normal py-[2px]">5.0</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ////////// testimonial  -->
+                <div class="comment">
+                    <div class="comment-img flex items-center gap-5 my-4">
+                        <img src="./pics/jose.png" alt="">
+                        <div class="comment-info">
+                            <h6 class="text-base font-medium">Jose</h6>
+                            <p class="text-sm font-normal text-[#6B7280]">December 2021</p>
+                        </div>
+                    </div>
+                    <h4 class="text-base font-normal">Host was very attentive.</h4>
+                    <div class="comment-img flex items-center gap-5 my-4">
+                        <img src="./pics/shayana.png" alt="">
+                        <div class="comment-info">
+                            <h6 class="text-base font-medium">Shayana</h6>
+                            <p class="text-sm font-normal text-[#6B7280]">December 2021</p>
+                        </div>
+                    </div>
+                    <h4 class="text-base font-normal">Wonderful neighborhood, easy access to restaurants and the subway, cozy studio apartment with a
+                        super comfortable bed. Great host, super helpful and responsive. Cool murphy bed...</h4>
+                    <div class="comment-img flex items-center gap-5 my-4">
+                        <img src="./pics/vladko.png" alt="">
+                        <div class="comment-info">
+                            <h6 class="text-base font-medium">Vladko</h6>
+                            <p class="text-sm font-normal text-[#6B7280]">November 2020</p>
+                        </div>
+                    </div>
+                    <h4 class="text-base font-normal">This is amazing place. It has everything one needs for a monthly business stay. Very clean and
+                        organized place. Amazing hospitality affordable price.</h4>
+                    <button class="button mt-5 font-medium text-sm rounded-md py-3 px-3 cursor-pointer border border-black">Show all 12 reviews</button>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="flex gap-[120px] gf:gap-[30px] md:gap-[25px]">
+                    <div class="clean">
+                        <p class="text-base font-normal py-[6px]">Cleanliness</p>
+                        <p class="text-base font-normal py-[6px]">Communication</p>
+                        <p class="text-base font-normal py-[6px]">Check-in</p>
+                    </div>
+                    <div class="radius">
+                        <div class="bar">
+                            <div class="black"></div>
+                            <div class="rate">
+                                <p class="text-[12px] font-normal py-[2px]">5.0</p>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="brown">
+                                <div class="brown-black"></div>
+                            </div>
+                            <div class="rate">
+                                <p class="text-[12px] font-normal py-[2px]">4.9</p>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="brown">
+                                <div class="brown-black low"></div>
+                            </div>
+                            <div class="rate">
+                                <p class="text-[12px] font-normal py-[2px]">4.7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ////////// testimonial  -->
+                <div class="comment">
+                    <div class="comment-img flex items-center gap-5 my-4">
+                        <img src="./pics/luke.png" alt="">
+                        <div class="comment-info">
+                            <h6 class="text-base font-medium">Luke</h6>
+                            <p class="text-sm font-normal text-[#6B7280]">December 2021</p>
+                        </div>
+                    </div>
+                    <h4 class="text-base font-normal">Nice place to stay!</h4>
+                    <div class="comment-img flex items-center gap-5 my-4">
+                        <img src="./pics/josh.png" alt="">
+                        <div class="comment-info">
+                            <h6 class="text-base font-medium">Josh</h6>
+                            <p class="text-sm font-normal text-[#6B7280]">November 2021</p>
+                        </div>
+                    </div>
+                    <h4 class="text-base font-normal">Well designed and fun space, neighborhood has lots of energy and amenities.</h4>
+                    <div class="comment-img jenni flex items-center gap-5 my-4">
+                        <img src="./pics/jenifer.png" alt="">
+                        <div class="comment-info">
+                            <h6 class="text-base font-medium">Jennifer</h6>
+                            <p class="text-sm font-normal text-[#6B7280]">January 2022</p>
+                        </div>
+                    </div>
+                    <h4 class="text-base font-normal">A centric place, near of a sub station and a supermarket with everything you need.
+                        ...</h4>
+                    <div class="show flex items-center mt-5 cursor-pointer">
+                        <p class="text-sm font-bold">show more</p>
+                        <img src="./pics/chevron-right.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="hosted px-24 py-5 gf:px-5 sm:px-7 md:px-8 ">
+        <div class="hosted-img flex items-center gap-5">
+            <img src="./pics/Avatar Base.png" alt="">
+            <div class="detail">
+                <h3 class="font-medium text-2xl">Hosted by Ghazal</h3>
+                <p class="text-base font-normal text-[#6B7280]">Joined May 2021</p>
+            </div>
+        </div>
+        <div class="reviews flex flex-wrap items-center mt-3 gap-4">
+            <img src="./pics/star-icon.png" alt="">
+            <p class="text-base font-normal">12 Reviews</p>
+            <img src="./pics/shield-tick.png" alt="">
+            <p class="text-base font-normal">Identity verified </p>
+            <img src="./pics/badge-icon.png" alt="">
+            <p class="text-base font-normal">Superhost</p>
+
+        </div>
+        <div class="super-host mt-5">
+            <h3 class="text-base font-bold">Ghazal is a Superhost</h3>
+            <p class="font-normal text-base">Superhosts are experienced, highly rated hosts who are <br> committed to providing great stays for
+                guests.</p>
+            <p class="special py-[6px] font-normal text-base">Response rate: 100%</p>
+            <p class="special py-[6px] font-normal text-base">Response time: within an hour</p>
+            <button class=" my-5 bg-white border border-black shadow-md rounded-md text-base cursor-pointer font-medium py-4 px-6">Contact Host</button>
+            <div class="content flex items-center mt-5 pb-5 gap-3 border-b-2 border-inherit">
+                <img src="./pics/Frame.png" alt="">
+                <p class="font-normal text-xs text-[#6B7280]">To protect your payment, never transfer <br> money or communicate outside of the <br> Airbnb website
+                    or app.</p>
+            </div>
+        </div>
+    </section>
+    <!-- /////////////////// -->
+    <section class="things px-24 py-5 gf:px-5 sm:px-7 md:px-8">
+        <h1 class="font-medium text-2xl mb-5">Things to know</h1>
+        <div class="flex flex-wrap gap-10">
+            <div class="column">
+                <h2 class="font-bold text-base mb-[10px]">House rules</h2>
+                <div class="icon pb-[10px] flex items-center gap-1">
+                    <img src="./pics/clock.png" alt="">
+                    <p class="font-normal text-base">Check-in: After 4:00 PM</p>
+                </div>
+                <div class="icon pb-[10px] flex items-center gap-1">
+                    <img src="./pics/clock.png" alt="">
+                    <p class="font-normal text-base">Checkout: 10:00 AM</p>
+                </div>
+                <div class="icon pb-[10px] flex items-center gap-1">
+                    <img src="./pics/clock.png" alt="">
+                    <p class="font-normal text-base">Self check-in with lockbox</p>
+                </div>
+                <div class="icon pb-[10px] flex items-center gap-1">
+                    <img src="./pics/clock.png" alt="">
+                    <p class="font-normal text-base">Not suitable for infants (under 2 years)</p>
+                </div>
+                <div class="icon pb-[10px] flex items-center gap-1">
+                    <img src="./pics/clock.png" alt="">
+                    <p class="font-normal text-base">No smoking</p>
+                </div>
+                <div class="icon pb-[10px] flex items-center gap-1">
+                    <img src="./pics/clock.png" alt="">
+                    <p class="font-normal text-base">No pets</p>
+                </div>
+                <div class="icon pb-[10px] flex items-center gap-1">
+                    <img src="./pics/clock.png" alt="">
+                    <p class="font-normal text-base">No parties or events</p>
+                </div>
+            </div>
+            <div class="column">
+                <h2 class="font-bold text-base mb-[10px]">Health & safety</h2>
+                <div class="icon pb-[10px] flex items-center gap-1">
+                    <img src="./pics/clock.png" alt="">
+                    <p class="font-normal text-base">Committed to Airbnb's enhanced cleaning <br> process. <span class="font-bold underline">show more</span></p>
+                </div>
+                <div class="icon pb-[10px] flex items-center gap-1">
+                    <img src="./pics/clock.png" alt="">
+                    <p class="font-normal text-base">Airbnb's social-distancing and other <br> COVID-19-related guidelines apply</p>
+                </div>
+                <div class="icon pb-[10px] flex items-center gap-1">
+                    <img src="./pics/clock.png" alt="">
+                    <p class="font-normal text-base">Carbon monoxide alarm</p>
+                </div>
+                <div class="icon flex items-center gap-1">
+                    <img src="./pics/clock.png" alt="">
+                    <p>Smoke alarm</p>
+                </div>
+                <div class="icon pb-[10px] flex items-center gap-1">
+                    <img src="./pics/clock.png" alt="">
+                    <p class="font-normal text-base">Security Deposit - if you damage the <br> home, you may be charged up to $566</p>
+                </div>
+                <div class="icon flex items-center gap-1">
+
+                    <p class="font-bold underline">Show more </p>
+                </div>
+            </div>
+            <div class="column">
+                <h2 class="font-bold text-base mb-[10px]">Cancellation policy</h2>
+                <p class="font-normal text-base">Free cancellation before Feb 14</p>
+                <p class="font-bold underline">show more </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ////////////////////////// -->
+
+    <section class="explore w-[100%] px-24 py-5 gf:px-5 sm:px-7 md:px-8 flex flex-col justify-center border-b-2 border-inherit h-[464px] sm:h-auto gf:h-auto bg-[#F9FAFB]">
+        <h1 class="font-medium text-2xl pb-[10px]">Explore other options in France</h1>
+        <div class="grid grid-rows-2">
+            <div class="grid grid-cols-4 gf:grid-cols-1 sm:grid-cols-3">
+                <div class="column">
+                    <p class="text-sm py-2">Paris</p>
+                    <p class="text-sm py-2">Lille</p>
+                    <p class="text-sm py-2">Toulouse</p>
+                </div>
+                <div class="column">
+                    <p class="text-sm py-2">Nice</p>
+                    <p class="text-sm py-2">Aix-en-Provence</p>
+                    <p class="text-sm py-2">Montpellier</p>
+                </div>
+                <div class="column">
+                    <p class="text-sm py-2">Lyon</p>
+                    <p class="text-sm py-2">Rouen</p>
+                    <p class="text-sm py-2">Dijon</p>
+                </div>
+                <div class="column">
+                    <p class="text-sm py-2">Marseille</p>
+                    <p class="text-sm py-2">Amiens</p>
+                    <p class="text-sm py-2">Grenoble</p>
+                </div>
+            </div>
+            <div class="unique">
+                <h1 class="font-medium text-2xl pb-[10px]">Unique stays on Airbnb</h1>
+                <div class="grid grid-cols-4 gf:grid-cols-1 sm:grid-cols-3">
+                    <div class="column">
+                        <p class="text-sm py-2">Beach House Rentals</p>
+                        <p class="text-sm py-2">Cabin Rentals</p>
+
+                    </div>
+                    <div class="column">
+                        <p class="text-sm py-2">Camper Rentals</p>
+                        <p class="text-sm py-2">Tiny House Rentals</p>
+
+                    </div>
+                    <div class="column">
+                        <p class="text-sm py-2">Glamping Rentals</p>
+                        <p class="text-sm py-2">Lakehouse Rentals</p>
+
+                    </div>
+                    <div class="column">
+                        <p class="text-sm py-2">Treehouse Rentals</p>
+                        <p class="text-sm py-2">Mountain Chalet Rentals</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column-last flex items-center mt-5">
+                <p class="text-sm font-normal">Airbnb</p>
+                <img src="./pics/chevron-right.png" alt="">
+
+                <p class="text-sm font-normal">Europe</p>
+                <img src="./pics/chevron-right.png" alt="">
+
+                <p class="text-sm font-normal">France</p>
+                <img src="./pics/chevron-right.png" alt="">
+
+                <p class="text-sm font-normal">Bordeaux</p>
+                <img src="./pics/chevron-right.png" alt="">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- //////////////////// link section -->
+    <div class="link w-[100%] px-24 gf:px-5 sm:px-7 md:px-8 h-auto  bg-[#F9FAFB]">
+        <div class="grid grid-cols-4 py-20 sm:grid-cols-2  gap-x-5 gap-y-5 gf:grid-cols-1 border-b-2 border-inherit mb-5">
+            <div class="content">
+                <h3 class="text-base font-bold mb-3">Support</h3>
+                <p class="text-sm text-[#4B5563] pb-2">Help Center</p>
+                <p class="text-sm text-[#4B5563] pb-2">Safety information</p>
+                <p class="text-sm text-[#4B5563] pb-2">Cancellation options</p>
+                <p class="text-sm text-[#4B5563] pb-2">Our COVID-19 Response</p>
+                <p class="text-sm text-[#4B5563] pb-2">Supporting people with disabilities</p>
+                <p class="text-sm text-[#4B5563] pb-2">Report a neighborhoood concern</p>
+            </div>
+            <div class="content">
+                <h3 class="text-base font-bold mb-3">Community</h3>
+                <p class="text-sm text-[#4B5563] pb-2">Airbnb.org: disaster relief housing</p>
+                <p class="text-sm text-[#4B5563] pb-2">Support: Afghan refugees</p>
+                <p class="text-sm text-[#4B5563] pb-2">Celebrating diversity & belonging</p>
+                <p class="text-sm text-[#4B5563] pb-2">Combating discriminatino</p>
+            </div>
+            <div class="content">
+                <h3 class="text-base font-bold mb-3">Hosting</h3>
+                <p class="text-sm text-[#4B5563] pb-2">Try hosting</p>
+                <p class="text-sm text-[#4B5563] pb-2">AirCover: protection for Hosts</p>
+                <p class="text-sm text-[#4B5563] pb-2">Explore hosting resources</p>
+                <p class="text-sm text-[#4B5563] pb-2">Visit our community forum</p>
+                <p class="text-sm text-[#4B5563] pb-2">How to host responsibly</p>
+            </div>
+            <div class="content">
+                <h3 class="text-base font-bold mb-3">About</h3>
+                <p class="text-sm text-[#4B5563] pb-2">Newsroom</p>
+                <p class="text-sm text-[#4B5563] pb-2">Learn about new features</p>
+                <p class="text-sm text-[#4B5563] pb-2">Letter from our founders</p>
+                <p class="text-sm text-[#4B5563] pb-2">Careers</p>
+                <p class="text-sm text-[#4B5563] pb-2">Investors</p>
+                <p class="text-sm text-[#4B5563] pb-2">Airbnb Luxe</p>
+            </div>
+        </div>
+
+
+        <!-- ///////////// footer  -->
+
+        <footer class="footer pb-5">
+            <div class="flex flex-wrap justify-between">
+                <div class="left flex flex-wrap items-center gap-3 gf:gap-1">
+                    <p>© 2022 Airbnb, Inc.</p>
+                    <p>Privacy</p>
+                    <p>Terms</p>
+                    <p>Sitemap</p>
+                </div>
+                <div class="right flex items-center gap-2">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.25 8C15.25 12.0041 12.0041 15.25 8 15.25C3.99594 15.25 0.75 12.0041 0.75 8C0.75 3.99594 3.99594 0.75 8 0.75C12.0041 0.75 15.25 3.99594 15.25 8Z"
+                            stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p><span>English (US)</span></p>
+                    <p>$</p>
+                    <p><span>USD</span></p>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 9C0 13.45 3.25 17.15 7.5 17.9L7.55017 17.8599C7.53344 17.8566 7.51672 17.8533 7.5 17.85V11.5H5.25V9H7.5V7C7.5 4.75 8.95 3.5 11 3.5C11.65 3.5 12.35 3.6 13 3.7V6H11.85C10.75 6 10.5 6.55 10.5 7.25V9H12.9L12.5 11.5H10.5V17.85C10.4833 17.8533 10.4666 17.8566 10.4498 17.8599L10.5 17.9C14.75 17.15 18 13.45 18 9C18 4.05 13.95 0 9 0C4.05 0 0 4.05 0 9Z"
+                            fill="#4B5563" />
+                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18.6615 9.07607C18.6673 9.22598 18.6692 9.37582 18.6692 9.52572C18.6692 14.0705 15.4722 19.3171 9.62599 19.3171C7.83014 19.3171 6.16025 18.7447 4.75328 17.7704C5.00199 17.7976 5.25457 17.8181 5.51103 17.8181C7.00004 17.8181 8.37148 17.2661 9.45933 16.3394C8.06851 16.319 6.8941 15.3174 6.48907 13.9546C6.68351 13.9955 6.88375 14.016 7.08853 14.016C7.37729 14.016 7.65765 13.9752 7.92638 13.8934C6.47096 13.58 5.37473 12.19 5.37473 10.5207C5.37473 10.5002 5.37473 10.4934 5.37473 10.4797C5.80367 10.7318 6.29461 10.8885 6.81593 10.9089C5.96193 10.2889 5.40055 9.23278 5.40055 8.04038C5.40055 7.41352 5.55688 6.8207 5.83207 6.30967C7.39925 8.39466 9.74228 9.76424 12.3837 9.90733C12.3295 9.65522 12.3017 9.38955 12.3017 9.12382C12.3017 7.22279 13.7248 5.68286 15.4806 5.68286C16.3947 5.68286 17.2203 6.09856 17.7997 6.7663C18.5252 6.6164 19.2047 6.33024 19.8197 5.93505C19.5814 6.73907 19.0781 7.41348 18.4205 7.83593C19.0639 7.75417 19.6776 7.57034 20.2467 7.29779C19.8197 7.98597 19.2823 8.5923 18.6615 9.07607Z"
+                            fill="#4B5563" />
+                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.0004 3.27271C9.63025 3.27271 9.33281 3.28307 8.40193 3.32543C7.47287 3.36798 6.8387 3.51507 6.28381 3.73089C5.70983 3.9538 5.22293 4.25198 4.73786 4.73725C4.25242 5.22234 3.95424 5.70925 3.73061 6.28307C3.51426 6.83816 3.36699 7.47252 3.32517 8.40125C3.28354 9.33216 3.27263 9.6298 3.27263 12C3.27263 14.3702 3.28317 14.6667 3.32535 15.5976C3.36808 16.5267 3.51517 17.1609 3.7308 17.7158C3.95388 18.2898 4.25205 18.7767 4.73731 19.2618C5.22221 19.7472 5.7091 20.0462 6.28272 20.2691C6.83798 20.4849 7.47232 20.632 8.4012 20.6745C9.33208 20.7169 9.62935 20.7272 11.9993 20.7272C14.3696 20.7272 14.6661 20.7169 15.597 20.6745C16.526 20.632 17.1609 20.4849 17.7162 20.2691C18.29 20.0462 18.7762 19.7472 19.2611 19.2618C19.7465 18.7767 20.0447 18.2898 20.2683 17.716C20.4828 17.1609 20.6301 16.5265 20.6737 15.5978C20.7156 14.6669 20.7265 14.3702 20.7265 12C20.7265 9.6298 20.7156 9.33234 20.6737 8.40143C20.6301 7.47234 20.4828 6.83816 20.2683 6.28325C20.0447 5.70925 19.7465 5.22234 19.2611 4.73725C18.7756 4.2518 18.2902 3.95361 17.7156 3.73089C17.1593 3.51507 16.5248 3.36798 15.5957 3.32543C14.6648 3.28307 14.3685 3.27271 11.9976 3.27271H12.0004ZM11.2175 4.84543C11.4498 4.84507 11.7091 4.84543 12.0004 4.84543C14.3305 4.84543 14.6066 4.8538 15.5268 4.89561C16.3777 4.93452 16.8395 5.07671 17.1471 5.19616C17.5544 5.35434 17.8447 5.54343 18.15 5.84889C18.4554 6.15434 18.6445 6.44525 18.8031 6.85252C18.9225 7.1598 19.0649 7.62161 19.1036 8.47252C19.1454 9.39252 19.1545 9.66889 19.1545 11.998C19.1545 14.3271 19.1454 14.6034 19.1036 15.5234C19.0647 16.3743 18.9225 16.8362 18.8031 17.1434C18.6449 17.5507 18.4554 17.8407 18.15 18.146C17.8446 18.4514 17.5546 18.6405 17.1471 18.7987C16.8399 18.9187 16.3777 19.0605 15.5268 19.0994C14.6068 19.1412 14.3305 19.1503 12.0004 19.1503C9.67007 19.1503 9.3939 19.1412 8.47393 19.0994C7.62304 19.0602 7.16124 18.918 6.85343 18.7985C6.44617 18.6403 6.15527 18.4513 5.84982 18.1458C5.54438 17.8403 5.35529 17.5502 5.19675 17.1427C5.0773 16.8354 4.93494 16.3736 4.89622 15.5227C4.8544 14.6027 4.84604 14.3263 4.84604 11.9958C4.84604 9.66525 4.8544 9.39034 4.89622 8.47034C4.93512 7.61943 5.0773 7.15761 5.19675 6.84998C5.35493 6.4427 5.54438 6.1518 5.84982 5.84634C6.15527 5.54089 6.44617 5.3518 6.85343 5.19325C7.16106 5.07325 7.62304 4.93143 8.47393 4.89234C9.27899 4.85598 9.59098 4.84507 11.2175 4.84325V4.84543ZM16.6588 6.29452C16.0806 6.29452 15.6115 6.76307 15.6115 7.34143C15.6115 7.91961 16.0806 8.3887 16.6588 8.3887C17.2369 8.3887 17.706 7.91961 17.706 7.34143C17.706 6.76325 17.2369 6.29416 16.6588 6.29416V6.29452ZM12.0004 7.51816C9.52535 7.51816 7.51868 9.52489 7.51868 12C7.51868 14.4751 9.52535 16.4809 12.0004 16.4809C14.4754 16.4809 16.4813 14.4751 16.4813 12C16.4813 9.52489 14.4752 7.51816 12.0002 7.51816H12.0004ZM12.0004 9.09089C13.6069 9.09089 14.9094 10.3932 14.9094 12C14.9094 13.6065 13.6069 14.9091 12.0004 14.9091C10.3937 14.9091 9.09136 13.6065 9.09136 12C9.09136 10.3932 10.3937 9.09089 12.0004 9.09089Z"
+                            fill="#4B5563" />
+                    </svg>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

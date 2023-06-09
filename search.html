@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                        'gf': { 'min': '280px', 'max': '540px' },
+
+                        'sm': { 'min': '541px', 'max': '767px' },
+                        // => @media (min-width: 640px and max-width: 767px) { ... }
+
+                        'md': { 'min': '768px', 'max': '1023px' },
+                        // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+                        'lg': { 'min': '1024px', 'max': '1535px' },
+                        // => @media (min-width: 1024px and max-width: 1279px) { ... }
+
+                        'xl': { 'min': '1280px', 'max': '1535px' },
+                        // => @media (min-width: 1280px and max-width: 1535px) { ... }
+
+                        '2xl': { 'min': '1536px' },
+                        // => @media (min-width: 1536px) { ... }
+                    },
+                extend: {
+                   
+                }
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container max-w-[1350px] ">
+        <nav class="nav flex flex-wrap gap-y-3 gf:items-center gf:justify-center justify-between items-center p-5">
+            <div class="nav-logo">
+                <img src="./pics/p-logo.png" alt="">
+            </div>
+            <div class="pages">
+                <ul class="flex flex-wrap  items-center justify-center text-white gap-7">
+                    <img  src="./pics/standard.png" alt="">
+                </ul>
+            </div>
+            <div class="flex gap-3 items-center text-base">
+                <p class="black">Become a Host</p>
+                <img src="./pics/globe.png" alt="">
+                <img src="./pics/serach-user.png" alt="">
+            </div>
+        </nav>
+        <div class="filter flex flex-wrap gap-x-[15px] px-5 items-center gap-5 pb-5 border-b-[1px] border-inherit">
+            <div class="price py-2 px-[10px] h-[40px] bg-white border border-inherit rounded-full cursor-pointer">
+                <select class="">
+                    <option class="">price</option>
+                </select>
+            </div>
+            <div class="price py-2 px-[10px] h-[40px] bg-white border border-inherit rounded-full cursor-pointer">
+                <select>
+                    <option>Type of places</option>
+                </select>
+            </div>
+            <span class="border-r-2 border-inherit h-[20px]"></span>
+            <button class="button py-2 px-[10px] h-[40px] bg-white border border-inherit rounded-full gap-[10px] text-sm cursor-pointer text-[#374151]">Free cancellation</button>
+            <button class="button py-2 px-[10px] h-[40px] bg-white border border-inherit rounded-full gap-[10px] text-sm cursor-pointer text-[#374151]">Wifi</button>
+            <button class="button py-2 px-[10px] h-[40px] bg-white border border-inherit rounded-full gap-[10px] text-sm cursor-pointer text-[#374151]">Kitchen</button>
+            <button class="button py-2 px-[10px] h-[40px] bg-white border border-inherit rounded-full gap-[10px] text-sm cursor-pointer text-[#374151]">Air conditioning</button>
+            <button class="button py-2 px-[10px] h-[40px] bg-white border border-inherit rounded-full gap-[10px] text-sm cursor-pointer text-[#374151]">Washer</button>
+            <button class="button py-2 px-[10px] h-[40px] bg-white border border-inherit rounded-full gap-[10px] text-sm cursor-pointer text-[#374151]">Iron</button>
+            <button class="button py-2 px-[10px] h-[40px] bg-white border border-inherit rounded-full gap-[10px] text-sm cursor-pointer text-[#374151]">Dedicated workspace</button>
+            <button class="button py-2 px-[10px] h-[40px] bg-white border border-inherit rounded-full gap-[10px] text-sm cursor-pointer text-[#374151]">Free parking</button>
+            <button class="button py-2 px-[10px] h-[40px] bg-white border border-inherit rounded-full gap-[10px] text-sm cursor-pointer text-[#374151]">Dryer</button>
+            <button class="button flex items-center py-2 px-[10px] h-[40px] bg-white border border-inherit rounded-full gap-[10px] text-sm cursor-pointer text-[#374151]"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.95837 6.66675H6.04171" stroke="#374151" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M10.625 6.66675H16.0417" stroke="#374151" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M3.95837 13.3333H10.2084" stroke="#141414" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M14.7916 13.3333H16.0416" stroke="#141414" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M10.2084 6.66675C10.2084 7.70228 9.36891 8.54175 8.33337 8.54175C7.29784 8.54175 6.45837 7.70228 6.45837 6.66675C6.45837 5.63121 7.29784 4.79175 8.33337 4.79175C9.36891 4.79175 10.2084 5.63121 10.2084 6.66675Z"
+                        stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M14.375 13.3333C14.375 14.3688 13.5355 15.2083 12.5 15.2083C11.4645 15.2083 10.625 14.3688 10.625 13.3333C10.625 12.2977 11.4645 11.4583 12.5 11.4583C13.5355 11.4583 14.375 12.2977 14.375 13.3333Z"
+                        stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Filter</button>
+        </div>
+    </div>
+
+
+    <section class="place pl-[30px] gf:p-1">
+        <div class="flex flex-wrap justify-between">
+            <div class="column">
+                <div class="heading p-5 border-b-2 border-inherit">
+                    <h3 class="font-normal text-base text-[#6B7280]">200+ stays in Bordeaux</h3>
+                </div>
+                <div class="image border-b-2 border-inherit pb-[30px] flex gf:flex-col sm:flex-col items-center gap-5 mt-[30px]">
+                    <img src="./pics/bed.png" alt="">
+                    <div class="content flex  justify-between items-center">
+                        <div class="detail">
+                            <p class="text-sm text-[#6B7220] py-2">Entire home in Bordeaux</p>
+                            <h2 class="font-medium text-xl text-[#374151]">Bordeaux Getaway</h2>
+                            <hr class="w-[50px]">
+                            <p class="text-sm text-[#6B7220] py-2">4-6 guests · Entire Home · 5 beds · 3 bath</p>
+                            <p class="text-sm text-[#6B7220] py-2">Wifi · Kitchen · Free Parking</p>
+                            <hr class="w-[50px]">
+                            <div class="rate flex justify-between items-center">
+                                <div class="review flex items-center">
+                                    <p class="text-sm text-[#6B7220] py-2">5.0</p>
+                                    <p class="text-sm text-[#6B7220] py-2">(318 reviews)</p>
+
+                                </div>
+                                <div class="rent">
+                                    <p class="font-medium text-lg text-[#374151]">$325<span class="text-sm font-normal text-[#374151]">/ night</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.9934 9.64436C14.0607 7.48008 10.8377 6.8979 8.41618 8.87972C5.99464 10.8616 5.65372 14.1751 7.55537 16.519L15.9934 24.3334L24.4313 16.519C26.333 14.1751 26.0337 10.8407 23.5705 8.87972C21.1074 6.91874 17.9261 7.48008 15.9934 9.64436Z"
+                                    stroke="#374151" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="column1">
+                    <div class="image border-b-2 border-inherit pb-[30px] flex gf:flex-col sm:flex-col
+                     items-center  gap-5 mt-[30px]">
+                        <img src="./pics/city.png" alt="">
+                        <div class="content flex justify-between items-center">
+                            <div class="detail">
+                                <p class="text-sm text-[#6B7220] py-2">Entire home in Bordeaux</p>
+                                <h2 class="font-medium text-xl text-[#374151]">Charming Waterfront Condo</h2>
+                                <hr class="w-[50px]">
+                                <p class="text-sm text-[#6B7220] py-2">4-6 guests · Entire Home · 5 beds · 3 bath</p>
+                                <p class="text-sm text-[#6B7220] py-2">Wifi · Kitchen · Free Parking</p>
+                                <hr class="w-[50px]">
+                                <div class="rate flex justify-between items-center">
+                                    <div class="review flex items-center">
+                                        <p class="text-sm text-[#6B7220] py-2">5.0</p>
+                                        <p class="text-sm text-[#6B7220] py-2">(318 reviews)</p>
+
+                                    </div>
+                                    <div class="rent">
+                                        <p class="font-medium text-lg text-[#374151]">$200<span class="text-sm font-normal text-[#374151]">/ night</span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15.9934 9.64436C14.0607 7.48008 10.8377 6.8979 8.41618 8.87972C5.99464 10.8616 5.65372 14.1751 7.55537 16.519L15.9934 24.3334L24.4313 16.519C26.333 14.1751 26.0337 10.8407 23.5705 8.87972C21.1074 6.91874 17.9261 7.48008 15.9934 9.64436Z"
+                                        fill="#FDA4AF" stroke="#F43F5E" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="column">
+                <div class="image1">
+                    <img src="./pics/Map.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
